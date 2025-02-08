@@ -1,0 +1,102 @@
+---
+import { Computer, Flame, Pin } from 'lucide-react'
+import { Badge } from '@/components/ui/badge'
+import { Separator } from '@/components/ui/separator'
+import { Image } from 'astro:assets'
+import herobg from '../assets/codenode_bg.png'
+---
+
+<section class="py-10">
+  <div class="overflow-hidden mx-auto">
+    <div
+      class="mb-10 flex flex-col items-center gap-6 text-center bg-background/70"
+    >
+      <Badge variant="outline">Formación online</Badge>
+      <h1 class="text-4xl font-semibold lg:text-5xl">Code Node</h1>
+      <p class="max-w-xl text-xl text-muted-foreground">
+        Lanzadera Tecnológica
+      </p>
+    </div>
+    <div class="relative mx-auto max-w-screen-lg">
+      <Image
+        src={herobg}
+        alt="Code Node"
+        class="w-full rounded-xl object-cover"
+      />
+
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"
+      >
+      </div>
+      <div
+        class="absolute -right-28 -top-28 -z-10 aspect-video h-72 w-96 opacity-40 [background-size:12px_12px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_20%,transparent_100%)] sm:bg-[radial-gradient(hsl(var(--muted-foreground))_1px,transparent_1px)]"
+      >
+      </div>
+      <div
+        class="absolute -left-28 -top-28 -z-10 aspect-video h-72 w-96 opacity-40 [background-size:12px_12px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_20%,transparent_100%)] sm:bg-[radial-gradient(hsl(var(--muted-foreground))_1px,transparent_1px)]"
+      >
+      </div>
+    </div>
+    <div
+      class="mx-auto mt-10 flex max-w-screen-lg flex-col md:flex-row bg-background/70"
+    >
+      <div
+        class="flex grow basis-0 flex-col rounded-md bg-background p-4 items"
+      >
+        <div
+          class="mb-6 flex size-10 items-center justify-center rounded-full bg-background drop-shadow-lg"
+        >
+          <Computer className="h-6 w-6" />
+        </div>
+        <h3 class="mb-2 font-semibold">Prácticas sin perder el tiempo.</h3>
+        <p class="text-sm text-muted-foreground">
+          Con <strong>Code Node</strong>, desarrollas habilidades reales en un <strong
+            >bootcamp 100% online</strong
+          >, con formación avanzada y proyectos que te preparan para el mercado
+          laboral.
+        </p>
+      </div>
+
+      <Separator
+        orientation="vertical"
+        className="mx-6 hidden h-auto w-[2px] bg-gradient-to-b from-muted via-transparent to-muted md:block"
+      />
+
+      <div class="flex grow basis-0 flex-col rounded-md bg-background p-4">
+        <div
+          class="mb-6 flex size-10 items-center justify-center rounded-full bg-background drop-shadow-lg"
+        >
+          <Flame className="h-6 w-6" />
+        </div>
+        <h3 class="mb-2 font-semibold">Haz un upgrade a tu carrera</h3>
+        <p class="text-sm text-muted-foreground">
+          Con <strong>Code Node</strong>, conviertes tu periodo de prácticas en
+          una experiencia real de desarrollo web y apps, con mentoría, clases en
+          vivo y proyectos que <strong
+            >te preparan para trabajar desde el primer día</strong
+          >.
+        </p>
+      </div>
+
+      <Separator
+        orientation="vertical"
+        className="mx-6 hidden h-auto w-[2px] bg-gradient-to-b from-muted via-transparent to-muted md:block"
+      />
+
+      <div class="flex grow basis-0 flex-col rounded-md bg-background p-4">
+        <div
+          class="mb-6 flex size-10 items-center justify-center rounded-full bg-background drop-shadow-lg"
+        >
+          <Pin className="h-6 w-6" />
+        </div>
+        <h3 class="mb-2 font-semibold">Directo al trabajo</h3>
+        <p class="text-sm text-muted-foreground">
+          Una experiencia <strong>intensiva en desarrollo web y apps</strong> donde
+          aprenderás de verdad, con clases en directo y proyectos semanales. <strong
+            >Conviértete en el desarrollador que buscan las empresas</strong
+          >.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
